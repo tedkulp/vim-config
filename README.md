@@ -16,15 +16,54 @@ Below is a list of plugin descriptions and keymap changes.
 4. `vim`
 5. `:BundleInstall`
 
+## YankRing
+
+Vim does not provide any mechanism to reference previous yanked, deleted
+or changed text.  In Emacs this feature is called the "kill ring".
+
+The YankRing plugin allows the user to configure the number of yanked,
+deleted and changed text.  A split window can be used to choose which
+element(s) from the yankring you wish to paste.  Alternately after
+text has been pasted (using p), it can be replaced with a previous
+value from the yankring with a single key stroke. You can learn more
+about it with `:help yankring`.
+
+**Cheatsheet**:
+
+`c-p` to move backwards through the ring
+`c-n` to move forwards through the ring
+`:YRShow` Show the current ring
+
 ## "Project Drawer" aka NERDTree
 
 NERDTree is a file explorer plugin that provides "project drawer"
 functionality to your vim projects.  You can learn more about it with
 `:help NERDTree`.
 
+**Cheatsheet**:
+
+Use `m` on any selected file/dir to bring up a menu of file commands
+
 **Customizations**:
 
 Use `gt` to toggle NERDTree
+
+## NERDCommenter
+
+A plugin that allows for easy commenting of code for many filetypes.
+Use `:help nerdcommenter`
+
+**Cheatsheet**:
+
+* `<leader>cc` - Comment out the current line or text selected in visual mode.
+* `<leader>cn` - Same as <leader>cc but forces nesting.
+* `<leader>c<space>` - Toggles the comment state of the selected line(s).
+  If the topmost selected line is commented, all selected lines are uncommented
+  and vice versa.
+* `<leader>ci` - Toggles the comment state of the selected line(s) individually.
+* `<leader>cs` - Comments out the selected lines "sexily"
+
+There are lots more... look at the help
 
 ## Ack.vim
 
@@ -40,7 +79,14 @@ You can learn more about it with :help Ack
 Indent object creates a "text object" that is relative to the current
 ident. Text objects work inside of visual mode, and with `c` (change),
 `d` (delete) and `y` (yank). For instance, try going into a method in
-normal mode, and type `v ii`. Then repeat `ii`. Also, `ai`.
+normal mode, and type `v ii`. Then repeat `ii`.
+
+**Cheatsheet**:
+
+* `<count>ai` - (A)n (I)ndentation level and line above.
+* `<count>ii` - (I)nner (I)ndentation level (no line above).
+* `<count>aI` - (A)n (I)ndentation level and lines above/below.
+* `<count>iI` - (I)nner (I)ndentation level (no lines above/below).
 
 ## surround
 
@@ -49,6 +95,16 @@ For instance, if the cursor was inside `"foo bar"`, you could type
 `cs"'` to convert the text to `'foo bar'`.
 
 There's a lot more; check it out at `:help surround`
+
+**Cheatsheet**:
+
+* `cs"'` - Change "Hello World" to 'Hello World'
+* `cs'<q>` - Change 'Hello World' to <q>Hello World</q>
+* `cst"` - Change <q>Hello World</q> to "Hello World"
+* `ds"` - Remove delimiters from "Hello World"
+* `ysiw]` - Makes [Hello] World! (w/ cursor on Hello -- iw is 'word' text object)
+* `ds]` - Makes Hello World! (w/ cursor on Hello)
+* `S(` - Visual mode -- wraps selected text in ( and )
 
 ## FuzzyFinder
 
@@ -107,3 +163,12 @@ Add `%{fugitive#statusline()}` to `'statusline'` to get an indicator
 with the current branch in (surprise!) your statusline.
 
 Oh, and of course there's `:Git` for running any arbitrary command.
+
+## ZoomWin
+
+When working with split windows, ZoomWin lets you zoom into a window and
+out again using `<C-W> o`
+
+**Customizations**:
+
+Binds `<leader>z` to `:ZoomWin`
