@@ -30,9 +30,9 @@ about it with `:help yankring`.
 
 **Cheatsheet**:
 
-`c-p` to move backwards through the ring
-`c-n` to move forwards through the ring
-`:YRShow` Show the current ring
+* `c-p` to move backwards through the ring
+* `c-n` to move forwards through the ring
+* `:YRShow` Show the current ring
 
 ## "Project Drawer" aka NERDTree
 
@@ -72,7 +72,7 @@ You can learn more about it with :help Ack
 
 **Customizations**:
 
-* `g/` to bring up `:Ack `.
+`g/` to bring up `:Ack `.
 
 ## indent-object
 
@@ -98,12 +98,12 @@ There's a lot more; check it out at `:help surround`
 
 **Cheatsheet**:
 
-* `cs"'` - Change "Hello World" to 'Hello World'
-* `cs'<q>` - Change 'Hello World' to <q>Hello World</q>
-* `cst"` - Change <q>Hello World</q> to "Hello World"
-* `ds"` - Remove delimiters from "Hello World"
-* `ysiw]` - Makes [Hello] World! (w/ cursor on Hello -- iw is 'word' text object)
-* `ds]` - Makes Hello World! (w/ cursor on Hello)
+* `cs"'` - Change `"Hello World"` to `'Hello World'`
+* `cs'<q>` - Change `'Hello World'` to `<q>Hello World</q>`
+* `cst"` - Change `<q>Hello World</q>` to `"Hello World"`
+* `ds"` - Remove delimiters from `"Hello World"`
+* `ysiw]` - Makes `[Hello] World!` (w/ cursor on Hello -- iw is 'word' text object)
+* `ds]` - Makes `Hello World!` (w/ cursor on Hello)
 * `S(` - Visual mode -- wraps selected text in ( and )
 
 ## FuzzyFinder
