@@ -1,9 +1,10 @@
 # Ted's custom vim config
 
 It's a work in progress. Below is a list of key bindings and notes.
-The layout and some configurations are based on the EdgeCase vim
-configuration. I've pulled the basic directory layout and Vundle
-setup, but kept most of my plugin choices and keymaps.
+The layout and some configurations are based on the [EdgeCase vim
+configuration](https://github.com/edgecase/vim-config). I've pulled
+the basic directory layout and Vundle setup, but kept most of my
+plugin choices and keymaps.
 
 Below is a list of plugin descriptions and keymap changes.
 
@@ -23,7 +24,7 @@ functionality to your vim projects.  You can learn more about it with
 
 **Customizations**:
 
-Use `<leader>n` to toggle NERDTree
+Use `gt` to toggle NERDTree
 
 ## Ack.vim
 
@@ -32,7 +33,7 @@ You can learn more about it with :help Ack
 
 **Customizations**:
 
-* `Cmd-F` or `g/` to bring up `:Ack `.
+* `g/` to bring up `:Ack `.
 
 ## indent-object
 
