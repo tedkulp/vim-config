@@ -66,7 +66,7 @@ set tabpagemax=20
 au BufReadPost * if line("'\"") > 0 && line("'\"") <= line("$") | exe "normal g'\"" | endif
 
 " Thorfile, Rakefile, Vagrantfile, and Gemfile are Ruby
-au BufRead,BufNewFile {Gemfile,Rakefile,Vagrantfile,Thorfile,config.ru,Guardfile} set ft=ruby
+au BufRead,BufNewFile {Gemfile,Rakefile,Vagrantfile,Thorfile,config.ru,Guardfile,Capfile} set ft=ruby
 
 " JSON is JS
 au BufNewFile,BufRead *.json set ai filetype=javascript
