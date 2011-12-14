@@ -15,6 +15,7 @@ Below is a list of plugin descriptions and keymap changes.
 3. `sh setup.sh`
 4. `vim`
 5. `:BundleInstall`
+6. Build CommandT (see CommandT section)
 
 ## YankRing
 
@@ -106,17 +107,25 @@ There's a lot more; check it out at `:help surround`
 * `ds]` - Makes `Hello World!` (w/ cursor on Hello)
 * `S(` - Visual mode -- wraps selected text in ( and )
 
-## FuzzyFinder
+## Command-t
 
-Provides convenient ways to quickly reach the
-buffer/file/command/bookmark/tag you want. FuzzyFinder searches with the
-fuzzy/partial pattern to which it converted an entered pattern.
+Provides convenient ways to quickly reach the buffer or file you want.
 
 * `<leader>t` - fuzzy find files
 * `<leader>b` - fuzzy find open buffers
-* `<leader>T` - use fuzzy finder to navigate via tags instead of built-in tag navigation
-* `<C-j>` - open selected item in window in horizontal split
-* `<C-k>` - open selected item in vertical split
+* `<C-s>` - open selected item in window in horizontal split
+* `<C-v>` - open selected item in vertical split
+
+**Building**:
+
+Command-t uses a C module, so it has to be built. It's not too hard,
+but does require build-essentials (on Ubuntu/Debian) or XCode to
+compile correctly. No clue how to do it on Windows...
+
+* `rvm use system` (if you have rvm setup)
+* `cd ~/.vim/bundle/command-t/ruby/command-t`
+* `ruby extconf.rb`
+* `make`
 
 ## Fugitive
 

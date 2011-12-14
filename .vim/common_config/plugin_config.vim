@@ -91,18 +91,10 @@ Bundle "scrooloose/nerdtree"
     endif
   endfunction
 
-Bundle "FuzzyFinder"
-  let g:fuf_coveragefile_prompt = '>GoToFile[]>'
-  let g:fuf_coveragefile_exclude = '\v\~$|' .
-  \                                '\.(o|exe|dll|bak|swp|log|sqlite3|png|gif|jpg)$|' .
-  \                                '(^|[/\\])\.(hg|git|bzr|bundle)($|[/\\])|' .
-  \                                '(^|[/\\])(log|tmp|vendor|system|doc|coverage|build|generated)($|[/\\])'
+Bundle 'git://git.wincent.com/command-t.git'
 
-  let g:fuf_keyOpenTabpage = '<D-CR>'
-
-  nmap <Leader>t :FufCoverageFile<CR>
-  nmap <Leader>b :FufBuffer<CR>
-  nmap <Leader>f :FufRenewCache<CR>
+  let g:CommandTMaxHeight = 10
+  let g:CommandTScanDotDirectories = 1
 
 Bundle "mileszs/ack.vim"
   nmap g/ :Ack!<space>
