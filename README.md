@@ -75,6 +75,18 @@ You can learn more about it with :help Ack
 
 `g/` to bring up `:Ack `.
 
+## repeat.vim
+
+If you've ever tried using the `.` command after a plugin map, you were likely disappointed to discover it only repeated the last native command inside that map, rather than the map as a whole. That disappointment ends today. Repeat.vim remaps `.` in a way that plugins can tap into it.
+
+The following plugins support repeat.vim:
+
+* surround.vim _(installed)_
+* abolish.vim _(installed)_
+* unimpaired.vim _(installed)_
+* speeddating.vim
+* commentary.vim
+
 ## indent-object
 
 Indent object creates a "text object" that is relative to the current
