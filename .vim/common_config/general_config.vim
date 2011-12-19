@@ -1,6 +1,9 @@
 " Plugin stuff
 set nocompatible
 
+" perform autoindenting based on filetype plugin
+filetype plugin indent on
+
 " Set leader to ,
 let mapleader=","
 

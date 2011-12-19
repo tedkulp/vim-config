@@ -89,6 +89,17 @@ normal mode, and type `v ii`. Then repeat `ii`.
 * `<count>aI` - (A)n (I)ndentation level and lines above/below.
 * `<count>iI` - (I)nner (I)ndentation level (no lines above/below).
 
+## text-object-ruby-block
+
+When textobj-rubyblock is installed you will gain two new text objects,
+which are triggered by `ar` and `ir` respectively. These follow Vim convention,
+so that `ar` selects all of a ruby block, and `ir` selects the inner portion
+of a rubyblock.
+
+In ruby, a block is always closed with the end keyword. Ruby blocks may
+be opened using one of several keywords, including module, class, def, if,
+and do.
+
 ## surround
 
 Surround allows you to modify "surroundings" around the current text.

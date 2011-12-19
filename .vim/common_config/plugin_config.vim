@@ -19,6 +19,9 @@ Bundle "tpope/vim-rake"
 Bundle "tpope/vim-rvm"
 Bundle "tpope/vim-surround"
 Bundle "tpope/vim-unimpaired"
+Bundle "tsaleh/vim-matchit"
+Bundle "kana/vim-textobj-user"
+Bundle "nelstrom/vim-textobj-rubyblock"
 
 Bundle "scrooloose/nerdtree"
   " let NERDTreeHijackNetrw = 0
