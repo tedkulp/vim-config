@@ -24,7 +24,7 @@ set softtabstop=2
 set expandtab
 
 " highlight trailing whitespace
-set list listchars=tab:\ \ ,trail:Â·
+set list listchars=tab:\ \ ,trail:·
 
 " Status bar
 set laststatus=2
