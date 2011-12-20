@@ -95,8 +95,7 @@ Bundle "scrooloose/nerdtree"
     endif
   endfunction
 
-Bundle 'git://git.wincent.com/command-t.git'
-
+Bundle 'wincent/Command-T.git'
   let g:CommandTMaxHeight = 10
   let g:CommandTScanDotDirectories = 1
 
