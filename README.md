@@ -204,3 +204,14 @@ out again using `<C-W> o`
 **Customizations**:
 
 Binds `<leader>z` to `:ZoomWin`
+
+## Supertab
+
+Supertab aims to provide tab completion to satisfy all your insert completion 
+needs (:help ins-completion). 
+
+**Customizations**:
+
+__(switch tab and c-tab)__
+Binds `<tab>` to `g:SuperTabMappingTabLiteral`
+Binds `<c-tab>` to `g:SuperTabMappingForward`

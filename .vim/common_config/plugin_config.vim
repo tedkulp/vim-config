@@ -24,6 +24,19 @@ Bundle "tsaleh/vim-matchit"
 Bundle "kana/vim-textobj-user"
 Bundle "nelstrom/vim-textobj-rubyblock"
 
+Bundle "ervandew/supertab"
+  if !exists("g:SuperTabMappingForward")
+    let g:SuperTabMappingForward = '<c-tab>'
+  endif
+
+  if !exists("g:SuperTabMappingBackward")
+    let g:SuperTabMappingBackward = '<s-tab>'
+  endif
+
+  if !exists("g:SuperTabMappingTabLiteral")
+    let g:SuperTabMappingTabLiteral = '<tab>'
+  endif
+
 Bundle "scrooloose/nerdtree"
   " let NERDTreeHijackNetrw = 0
   let NERDTreeShowHidden=1
