@@ -17,6 +17,22 @@ Below is a list of plugin descriptions and keymap changes.
 5. `:BundleInstall`
 6. Build CommandT (see CommandT section)
 
+## Custom Shortcuts
+
+* `c-h` Move left one window/buffer
+* `c-j` Move down one window/buffer
+* `c-k` Move up one window/buffer
+* `c-l` Move right one window/buffer
+* `s-up` Resize buffer one line higher
+* `s-down` Resize buffer one line lower
+* `s-left` Resize buffer one column smaller
+* `s-right` Resize buffer one column bigger
+* `<leader>-w` Enable word wrapping
+* `<leader>-W` Disable word wrapping
+* `<leader>-c` Remove trailing whitespace on whole file
+* `<leader>-space` Remove search highlight
+* `<leader>-I` Reindent entire file
+
 ## YankRing
 
 Vim does not provide any mechanism to reference previous yanked, deleted
