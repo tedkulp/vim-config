@@ -1,4 +1,4 @@
-# Ted's custom vim config
+# Ted's custom vim config #
 
 It's a work in progress. Below is a list of key bindings and notes.
 The layout and some configurations are based on the [EdgeCase vim
@@ -8,7 +8,7 @@ plugin choices and keymaps.
 
 Below is a list of plugin descriptions and keymap changes.
 
-## Setup
+## Setup ##
 
 1. `git clone git://github.com/tedkulp/vim-config.git`
 2. `cd vim-config`
@@ -17,7 +17,7 @@ Below is a list of plugin descriptions and keymap changes.
 5. `:BundleInstall`
 6. Build CommandT (see CommandT section)
 
-## Custom Shortcuts
+## Custom Shortcuts ##
 
 * `c-h` Move left one window/buffer
 * `c-j` Move down one window/buffer
@@ -33,7 +33,7 @@ Below is a list of plugin descriptions and keymap changes.
 * `<leader>-space` Remove search highlight
 * `<leader>-I` Reindent entire file
 
-## YankRing
+## YankRing ##
 
 Vim does not provide any mechanism to reference previous yanked, deleted
 or changed text.  In Emacs this feature is called the "kill ring".
@@ -51,7 +51,7 @@ about it with `:help yankring`.
 * `c-n` to move forwards through the ring
 * `:YRShow` Show the current ring
 
-## "Project Drawer" aka NERDTree
+## "Project Drawer" aka NERDTree ##
 
 NERDTree is a file explorer plugin that provides "project drawer"
 functionality to your vim projects.  You can learn more about it with
@@ -65,7 +65,7 @@ Use `m` on any selected file/dir to bring up a menu of file commands
 
 Use `gt` to toggle NERDTree
 
-## NERDCommenter
+## NERDCommenter ##
 
 A plugin that allows for easy commenting of code for many filetypes.
 Use `:help nerdcommenter`
@@ -82,7 +82,7 @@ Use `:help nerdcommenter`
 
 There are lots more... look at the help
 
-## Ack.vim
+## Ack.vim ##
 
 Ack.vim uses ack to search inside the current directory for a pattern.
 You can learn more about it with :help Ack
@@ -91,7 +91,7 @@ You can learn more about it with :help Ack
 
 `g/` to bring up `:Ack `.
 
-## repeat.vim
+## Repeat.vim ##
 
 If you've ever tried using the `.` command after a plugin map, you were likely disappointed to discover it only repeated the last native command inside that map, rather than the map as a whole. That disappointment ends today. Repeat.vim remaps `.` in a way that plugins can tap into it.
 
@@ -103,7 +103,7 @@ The following plugins support repeat.vim:
 * speeddating.vim
 * commentary.vim
 
-## indent-object
+## indent-object ##
 
 Indent object creates a "text object" that is relative to the current
 ident. Text objects work inside of visual mode, and with `c` (change),
@@ -117,7 +117,7 @@ normal mode, and type `v ii`. Then repeat `ii`.
 * `<count>aI` - (A)n (I)ndentation level and lines above/below.
 * `<count>iI` - (I)nner (I)ndentation level (no lines above/below).
 
-## text-object-ruby-block
+## text-object-ruby-block ##
 
 When textobj-rubyblock is installed you will gain two new text objects,
 which are triggered by `ar` and `ir` respectively. These follow Vim convention,
@@ -128,7 +128,7 @@ In ruby, a block is always closed with the end keyword. Ruby blocks may
 be opened using one of several keywords, including module, class, def, if,
 and do.
 
-## surround
+## Surround ##
 
 Surround allows you to modify "surroundings" around the current text.
 For instance, if the cursor was inside `"foo bar"`, you could type
@@ -146,7 +146,7 @@ There's a lot more; check it out at `:help surround`
 * `ds]` - Makes `Hello World!` (w/ cursor on Hello)
 * `S(` - Visual mode -- wraps selected text in ( and )
 
-## Command-t
+## Command-T ##
 
 Provides convenient ways to quickly reach the buffer or file you want.
 
@@ -166,7 +166,7 @@ compile correctly. No clue how to do it on Windows...
 * `ruby extconf.rb`
 * `make`
 
-## Fugitive
+## Fugitive ##
 
 I'm not going to lie to you; fugitive.vim may very well be the best
 Git wrapper of all time.  Check out these features:
@@ -212,7 +212,7 @@ with the current branch in (surprise!) your statusline.
 
 Oh, and of course there's `:Git` for running any arbitrary command.
 
-## ZoomWin
+## ZoomWin ##
 
 When working with split windows, ZoomWin lets you zoom into a window and
 out again using `<C-W> o`
@@ -221,13 +221,98 @@ out again using `<C-W> o`
 
 Binds `<leader>z` to `:ZoomWin`
 
-## Supertab
+## Supertab ##
 
-Supertab aims to provide tab completion to satisfy all your insert completion 
-needs (:help ins-completion). 
+Supertab aims to provide tab completion to satisfy all your insert completion
+needs (:help ins-completion).
 
 **Customizations**:
 
 __(switch tab and c-tab)__
 Binds `<tab>` to `g:SuperTabMappingTabLiteral`
 Binds `<c-tab>` to `g:SuperTabMappingForward`
+
+## Abolish ##
+
+_(I just copied the whole README -- it's too hard to explain)_
+
+This is a plugin over 3 years in the making that I've deferred releasing, primarily
+because it's so gosh darn hard to explain.  It's three superficially unrelated
+plugins in one that share a common theme: working with variants of a word.
+
+### Abbreviation ###
+
+I know how to spell separate.  I know how to spell desperate.  My fingers, however, have trouble
+distinguishing between the two, and I invariably have a 50 percent chance of typing
+seperate or desparate each time one of these comes up.  At first, I tried abbreviations:
+
+    iabbrev  seperate  separate
+    iabbrev desparate desperate
+
+But this falls short at the beginning of a sentence.
+
+    iabbrev  Seperate  Separate
+    iabbrev Desparate Desperate
+
+To be really thorough, we need uppercase too!
+
+    iabbrev  SEPERATE  SEPARATE
+    iabbrev DESPARATE DESPERATE
+
+Oh, but consider the noun form, and the adverb form!
+
+    iabbrev  seperation  separation
+    iabbrev desparation desperation
+    iabbrev  seperately  separately
+    iabbrev desparately desperately
+    iabbrev  Seperation  separation
+    iabbrev Desparation Desperation
+    iabbrev  Seperately  Separately
+    iabbrev Desparately Desperately
+    iabbrev  SEPERATION  SEPARATION
+    iabbrev DESPARATION DESPERATION
+    iabbrev  SEPERATELY  SEPARATELY
+    iabbrev DESPARATELY DESPERATELY
+
+Wait, there's also separates, separated, separating, separations, separator...
+
+Abolish.vim provides a simpler way.  The following one command produces 48 abbreviations
+including all of the above.
+
+    Abolish {despa,sepe}rat{e,es,ed,ing,ely,ion,ions,or}  {despe,sepa}rat{}
+
+My current configuration has 25 Abolish commands that create hundreds of corrections
+my fingers refuse to learn.
+
+### Substitution ###
+
+One time I had an application that with a domain model called "facilities" that needed
+to be renamed to "buildings". So, a simple search and replace, right?
+
+    :%s/facility/building/g
+
+Oh, but the case variants!
+
+    :%s/Facility/Building/g
+    :%s/FACILITY/BUILDING/g
+
+Wait, the plural is more than "s" so we need to get that too!
+
+    :%s/facilities/buildings/g
+    :%s/Facilities/Buildings/g
+    :%s/FACILITIES/BUILDINGS/g
+
+Abolish.vim has your back.  One command to do all six, and you can repeat it with & too!
+
+    :%Subvert/facilit{y,ies}/building{,s}/g
+
+You can abbreviate it as :S, and it accepts the full range of flags including
+things like c (confirm).
+
+There's also a variant for searching and a variant for grepping.
+
+### Coercion ###
+
+Want to turn fooBar into foo_bar?  Press crs (coerce to snake_case).
+MixedCase, camelCase, snake_case, and UPPER_CASE are all just 3 keystrokes
+away.  These commands support repeat.vim.
