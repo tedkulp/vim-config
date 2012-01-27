@@ -232,6 +232,15 @@ __(switch tab and c-tab)__
 Binds `<tab>` to `g:SuperTabMappingTabLiteral`
 Binds `<c-tab>` to `g:SuperTabMappingForward`
 
+## BufOnly ##
+
+`:BufOnly` without an argument will unload all buffers but the current one. `:BufOnly`
+with an argument will close all buffers but the supplied buffer name/number.
+
+**Customizations**:
+
+Binds `<leader>bo` to `:BufOnly`
+
 ## Abolish ##
 
 _(I just copied the whole README -- it's too hard to explain)_

@@ -24,6 +24,9 @@ Bundle "tsaleh/vim-matchit"
 Bundle "kana/vim-textobj-user"
 Bundle "nelstrom/vim-textobj-rubyblock"
 
+Bundle "BufOnly.vim"
+  map <Leader>bo  :BufOnly<CR>
+
 Bundle "ervandew/supertab"
   if !exists("g:SuperTabMappingForward")
     let g:SuperTabMappingForward = '<c-tab>'
