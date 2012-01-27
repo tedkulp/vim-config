@@ -25,3 +25,6 @@ nnoremap <S-Up> <c-w>+
 nnoremap <S-Down> <c-w>-
 nnoremap <S-Left> <c-w><
 nnoremap <S-Right> <c-w>>
+
+" shortcut to save all
+nmap <Leader>ss :wa<cr>

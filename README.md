@@ -32,6 +32,7 @@ Below is a list of plugin descriptions and keymap changes.
 * `<leader>-c` Remove trailing whitespace on whole file
 * `<leader>-space` Remove search highlight
 * `<leader>-I` Reindent entire file
+* `<leader>-ss` Save all buffers/open files
 
 ## YankRing ##
 
