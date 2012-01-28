@@ -276,6 +276,14 @@ Tagbar is a vim plugin for browsing the tags of source code files.
 
 Binds `<leader>rt` to toggle Tagbar
 
+## [Powerline](https://github.com/Lokaltog/vim-powerline) ##
+
+Powerline is a utility plugin which allows you to create better-looking, more
+functional vim statuslines.
+
+_(I have some customizations for this, but let them out of the repo, as they're
+fairly machine specific)_
+
 ## [Abolish](https://github.com/tpope/vim-abolish) ##
 
 _(I just copied the whole README -- it's too hard to explain)_

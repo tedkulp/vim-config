@@ -23,6 +23,7 @@ Bundle "tsaleh/vim-matchit"
 Bundle "kana/vim-textobj-user"
 Bundle "nelstrom/vim-textobj-rubyblock"
 Bundle "Lokaltog/vim-easymotion"
+Bundle "Lokaltog/vim-powerline"
 
 Bundle "majutsushi/tagbar"
   map <Leader>rt :TagbarToggle<cr>
