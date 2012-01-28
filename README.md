@@ -152,7 +152,6 @@ There's a lot more; check it out at `:help surround`
 Provides convenient ways to quickly reach the buffer or file you want.
 
 * `<leader>t` - fuzzy find files
-* `<leader>b` - fuzzy find open buffers
 * `<C-s>` - open selected item in window in horizontal split
 * `<C-v>` - open selected item in vertical split
 
