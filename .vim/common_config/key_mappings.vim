@@ -30,4 +30,4 @@ nnoremap <S-Right> <c-w>>
 nmap <Leader>ss :wa<cr>
 
 " shortcut to delete all buffers
-nmap <Leader>ba :bufdo bd<cr>
+nmap <Leader>Ba :bufdo bd<cr>

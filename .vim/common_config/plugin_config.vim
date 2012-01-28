@@ -34,7 +34,7 @@ Bundle "jeetsukumaran/vim-buffergator"
   map <Leader>b :BuffergatorToggle<cr>
 
 Bundle "BufOnly.vim"
-  map <Leader>bo  :BufOnly<CR>
+  map <Leader>Bo  :BufOnly<CR>
 
 Bundle "ervandew/supertab"
   if !exists("g:SuperTabMappingForward")

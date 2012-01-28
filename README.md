@@ -32,7 +32,7 @@ Below is a list of plugin descriptions and keymap changes.
 * `<leader>-space` Remove search highlight
 * `<leader>-I` Reindent entire file
 * `<leader>-ss` Save all buffers/open files
-* `<leader>-ba` Delete all buffers
+* `<leader>-Ba` Delete all buffers (cap B so it doesn't slow down Buffergator)
 
 ## YankRing ##
 
@@ -267,7 +267,7 @@ with an argument will close all buffers but the supplied buffer name/number.
 
 **Customizations**:
 
-Binds `<leader>bo` to `:BufOnly`
+Binds `<leader>Bo` to `:BufOnly` (cap B so it doesn't slow down Buffergator)
 
 ## [Tagbar](https://github.com/majutsushi/tagbar) ##
 
