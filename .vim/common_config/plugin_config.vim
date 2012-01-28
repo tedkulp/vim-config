@@ -25,6 +25,9 @@ Bundle "kana/vim-textobj-user"
 Bundle "nelstrom/vim-textobj-rubyblock"
 Bundle "Lokaltog/vim-easymotion"
 
+Bundle "majutsushi/tagbar"
+  map <Leader>rt :TagbarToggle<cr>
+
 Bundle "jeetsukumaran/vim-buffergator"
   " Remove the key binding and reset them by hand
   " (it inteferes with CtrlP)

@@ -260,6 +260,14 @@ with an argument will close all buffers but the supplied buffer name/number.
 
 Binds `<leader>bo` to `:BufOnly`
 
+## [Tagbar](https://github.com/majutsushi/tagbar) ##
+
+Tagbar is a vim plugin for browsing the tags of source code files.
+
+**Customizations**:
+
+Binds `<leader>rt` to toggle Tagbar
+
 ## Abolish ##
 
 _(I just copied the whole README -- it's too hard to explain)_
