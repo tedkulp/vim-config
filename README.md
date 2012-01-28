@@ -202,6 +202,15 @@ with the current branch in (surprise!) your statusline.
 
 Oh, and of course there's `:Git` for running any arbitrary command.
 
+**Customizations**:
+
+Binds `<leader>gb` to `:Gblame`
+Binds `<leader>gs` to `:Gstatus`
+Binds `<leader>gd` to `:Gdiff`
+Binds `<leader>gl` to `:Glog`
+Binds `<leader>gc` to `:Gcommit`
+Binds `<leader>gp` to `:Git push`
+
 ## [ZoomWin](http://github.com/vim-scripts/ZoomWin) ##
 
 When working with split windows, ZoomWin lets you zoom into a window and

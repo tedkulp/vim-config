@@ -11,7 +11,6 @@ Bundle "tpope/vim-abolish"
 Bundle "tpope/vim-bundler"
 Bundle "tpope/vim-cucumber"
 Bundle "tpope/vim-endwise"
-Bundle "tpope/vim-fugitive"
 Bundle "tpope/vim-git"
 Bundle "tpope/vim-markdown"
 Bundle "tpope/vim-rails"
@@ -120,6 +119,14 @@ Bundle "scrooloose/nerdtree"
       endif
     endif
   endfunction
+
+Bundle "tpope/vim-fugitive"
+  map <leader>gb :Gblame<CR>
+  map <leader>gs :Gstatus<CR>
+  map <leader>gd :Gdiff<CR>
+  map <leader>gl :Glog<CR>
+  map <leader>gc :Gcommit<CR>
+  map <leader>gp :Git push<CR>
 
 Bundle "kien/ctrlp.vim"
   map <Leader>t :CtrlP<cr>
