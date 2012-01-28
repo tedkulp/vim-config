@@ -111,9 +111,10 @@ Bundle "scrooloose/nerdtree"
     endif
   endfunction
 
-Bundle 'wincent/Command-T.git'
-  let g:CommandTMaxHeight = 10
-  let g:CommandTScanDotDirectories = 1
+Bundle "kien/ctrlp.vim"
+  map <Leader>t :CtrlP<cr>
+  map <Leader>b :CtrlPBuffer<cr>
+  map <Leader>m :CtrlPMRU<cr>
 
 Bundle "mileszs/ack.vim"
   nmap g/ :Ack!<space>
