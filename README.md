@@ -129,7 +129,7 @@ In ruby, a block is always closed with the end keyword. Ruby blocks may
 be opened using one of several keywords, including module, class, def, if,
 and do.
 
-## Surround ##
+## [Surround](https://github.com/tpope/vim-surround) ##
 
 Surround allows you to modify "surroundings" around the current text.
 For instance, if the cursor was inside `"foo bar"`, you could type
@@ -147,7 +147,7 @@ There's a lot more; check it out at `:help surround`
 * `ds]` - Makes `Hello World!` (w/ cursor on Hello)
 * `S(` - Visual mode -- wraps selected text in ( and )
 
-## Ctrl-P ##
+## [Ctrl-P](https://github.com/kien/ctrlp.vim) ##
 
 Provides convenient ways to quickly reach the buffer or file you want.
 
@@ -155,7 +155,7 @@ Provides convenient ways to quickly reach the buffer or file you want.
 * `<C-s>` - open selected item in window in horizontal split
 * `<C-v>` - open selected item in vertical split
 
-## Fugitive ##
+## [Fugitive](https://github.com/tpope/vim-fugitive) ##
 
 I'm not going to lie to you; fugitive.vim may very well be the best
 Git wrapper of all time.  Check out these features:
@@ -248,7 +248,7 @@ EasyMotion is triggered by one of the provided mappings.
 
 check EasyMotion's [home page](https://github.com/Lokaltog/vim-easymotion) for more information.
 
-## Supertab ##
+## [Supertab](https://github.com/ervandew/supertab) ##
 
 Supertab aims to provide tab completion to satisfy all your insert completion
 needs (:help ins-completion).
@@ -259,7 +259,7 @@ __(switch tab and c-tab)__
 Binds `<tab>` to `g:SuperTabMappingTabLiteral`
 Binds `<c-tab>` to `g:SuperTabMappingForward`
 
-## BufOnly ##
+## [BufOnly](http://www.vim.org/scripts/script.php?script_id=1071) ##
 
 `:BufOnly` without an argument will unload all buffers but the current one. `:BufOnly`
 with an argument will close all buffers but the supplied buffer name/number.
@@ -276,7 +276,7 @@ Tagbar is a vim plugin for browsing the tags of source code files.
 
 Binds `<leader>rt` to toggle Tagbar
 
-## Abolish ##
+## [Abolish](https://github.com/tpope/vim-abolish) ##
 
 _(I just copied the whole README -- it's too hard to explain)_
 
