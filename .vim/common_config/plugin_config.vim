@@ -24,6 +24,12 @@ Bundle "tsaleh/vim-matchit"
 Bundle "kana/vim-textobj-user"
 Bundle "nelstrom/vim-textobj-rubyblock"
 
+Bundle "jeetsukumaran/vim-buffergator"
+  " Remove the key binding and reset them by hand
+  " (it inteferes with CtrlP)
+  let g:buffergator_suppress_keymaps = 1
+  map <Leader>b :BuffergatorToggle<cr>
+
 Bundle "BufOnly.vim"
   map <Leader>bo  :BufOnly<CR>
 
@@ -113,7 +119,6 @@ Bundle "scrooloose/nerdtree"
 
 Bundle "kien/ctrlp.vim"
   map <Leader>t :CtrlP<cr>
-  map <Leader>b :CtrlPBuffer<cr>
   map <Leader>m :CtrlPMRU<cr>
 
 Bundle "mileszs/ack.vim"
