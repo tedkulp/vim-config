@@ -23,6 +23,7 @@ Bundle "tpope/vim-unimpaired"
 Bundle "tsaleh/vim-matchit"
 Bundle "kana/vim-textobj-user"
 Bundle "nelstrom/vim-textobj-rubyblock"
+Bundle "Lokaltog/vim-easymotion"
 
 Bundle "jeetsukumaran/vim-buffergator"
   " Remove the key binding and reset them by hand

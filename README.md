@@ -202,7 +202,7 @@ with the current branch in (surprise!) your statusline.
 
 Oh, and of course there's `:Git` for running any arbitrary command.
 
-## ZoomWin ##
+## [ZoomWin](http://github.com/vim-scripts/ZoomWin) ##
 
 When working with split windows, ZoomWin lets you zoom into a window and
 out again using `<C-W> o`
@@ -226,6 +226,19 @@ with focus remaining in the buffer catalog. Even better, you can "walk" up and
 down the list of buffers shown in the catalog by using <C-N> (or <SPACE>) /
 <C-P> (or <C-SPACE>). These keys select the next/previous buffer in succession,
 respectively, opening it for preview without leaving the buffer catalog viewer.
+
+## [EasyMotion](https://github.com/Lokaltog/vim-easymotion) ##
+
+EasyMotion provides a much simpler way to use some motions in vim. It takes the
+out of w or f{char} by highlighting all possible choices and allowing you to
+press one key to jump directly to the target.
+
+When one of the available motions is triggered, all visible text preceding or
+following the cursor is faded, and motion targets are highlighted.
+
+EasyMotion is triggered by one of the provided mappings.
+
+check EasyMotion's [home page](https://github.com/Lokaltog/vim-easymotion) for more information.
 
 ## Supertab ##
 
