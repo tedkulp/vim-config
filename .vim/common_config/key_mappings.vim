@@ -26,5 +26,8 @@ nnoremap <S-Down> <c-w>-
 nnoremap <S-Left> <c-w><
 nnoremap <S-Right> <c-w>>
 
-" shortcut to save all
+" shortcut to save all buffers
 nmap <Leader>ss :wa<cr>
+
+" shortcut to delete all buffers
+nmap <Leader>ba :bufdo bd<cr>

@@ -33,6 +33,7 @@ Below is a list of plugin descriptions and keymap changes.
 * `<leader>-space` Remove search highlight
 * `<leader>-I` Reindent entire file
 * `<leader>-ss` Save all buffers/open files
+* `<leader>-ba` Delete all buffers
 
 ## YankRing ##
 
