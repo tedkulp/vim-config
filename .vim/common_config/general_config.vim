@@ -4,6 +4,9 @@ set nocompatible
 " perform autoindenting based on filetype plugin
 filetype plugin indent on
 
+" UTF-8 is the bestest
+set encoding=utf-8
+
 " Set leader to ,
 let mapleader=","
 

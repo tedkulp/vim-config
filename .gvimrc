@@ -1,3 +1,5 @@
+runtime! before_config/*.vim
+
 " use gui tabs
 set guioptions+=e
 
