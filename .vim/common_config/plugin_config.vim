@@ -32,6 +32,7 @@ Bundle "jeetsukumaran/vim-buffergator"
   " Remove the key binding and reset them by hand
   " (it inteferes with CtrlP)
   let g:buffergator_suppress_keymaps = 1
+  let g:buffergator_autoexpand_on_split = 0
   map <Leader>b :BuffergatorToggle<cr>
 
 Bundle "BufOnly.vim"
