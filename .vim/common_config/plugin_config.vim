@@ -5,7 +5,6 @@
 Bundle "YankRing.vim"
 Bundle "L9"
 Bundle "ddollar/nerdcommenter"
-Bundle "kchmck/vim-coffee-script"
 Bundle "michaeljsmith/vim-indent-object"
 Bundle "tpope/vim-abolish"
 Bundle "tpope/vim-bundler"
@@ -24,6 +23,11 @@ Bundle "kana/vim-textobj-user"
 Bundle "nelstrom/vim-textobj-rubyblock"
 Bundle "Lokaltog/vim-easymotion"
 Bundle "Lokaltog/vim-powerline"
+Bundle "matschaffer/netrw-v142"
+Bundle "Align"
+
+Bundle "kchmck/vim-coffee-script"
+  au BufNewFile,BufRead *.coffee set filetype=coffee
 
 Bundle "majutsushi/tagbar"
   map <Leader>rt :TagbarToggle<cr>
