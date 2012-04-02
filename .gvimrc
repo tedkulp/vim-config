@@ -19,6 +19,6 @@ set guifont=Inconsolata:h12
 
 " pretty but not terminal-compatible color scheme
 set background=dark
-colors desert256
+colors solarized
 
 runtime! custom_config/*.gvim

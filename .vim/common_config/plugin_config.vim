@@ -25,6 +25,7 @@ Bundle "Lokaltog/vim-easymotion"
 Bundle "Lokaltog/vim-powerline"
 Bundle "matschaffer/netrw-v142"
 Bundle "Align"
+Bundle 'altercation/vim-colors-solarized'
 
 Bundle "kchmck/vim-coffee-script"
   au BufNewFile,BufRead *.coffee set filetype=coffee

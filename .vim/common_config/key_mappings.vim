@@ -31,3 +31,6 @@ nmap <Leader>ss :wa<cr>
 
 " shortcut to delete all buffers
 nmap <Leader>Ba :bufdo bd<cr>
+
+" toggle background colour
+map <F9> :call ToggleBackgroundColour()<CR>
