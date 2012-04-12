@@ -203,12 +203,12 @@ Oh, and of course there's `:Git` for running any arbitrary command.
 
 **Customizations**:
 
-Binds `<leader>gb` to `:Gblame`
-Binds `<leader>gs` to `:Gstatus`
-Binds `<leader>gd` to `:Gdiff`
-Binds `<leader>gl` to `:Glog`
-Binds `<leader>gc` to `:Gcommit`
-Binds `<leader>gp` to `:Git push`
+* Binds `<leader>gb` to `:Gblame`
+* Binds `<leader>gs` to `:Gstatus`
+* Binds `<leader>gd` to `:Gdiff`
+* Binds `<leader>gl` to `:Glog`
+* Binds `<leader>gc` to `:Gcommit`
+* Binds `<leader>gp` to `:Git push`
 
 ## [ZoomWin](http://github.com/vim-scripts/ZoomWin) ##
 
@@ -217,7 +217,7 @@ out again using `<C-W> o`
 
 **Customizations**:
 
-Binds `<leader>z` to `:ZoomWin`
+* Binds `<leader>z` to `:ZoomWin`
 
 ## [Buffergator](https://github.com/jeetsukumaran/vim-buffergator) ##
 
@@ -255,9 +255,9 @@ needs (:help ins-completion).
 
 **Customizations**:
 
-__(switch tab and c-tab)__
-Binds `<tab>` to `g:SuperTabMappingTabLiteral`
-Binds `<c-tab>` to `g:SuperTabMappingForward`
+* __(switch tab and c-tab)__
+* Binds `<tab>` to `g:SuperTabMappingTabLiteral`
+* Binds `<c-tab>` to `g:SuperTabMappingForward`
 
 ## [BufOnly](http://www.vim.org/scripts/script.php?script_id=1071) ##
 
@@ -266,7 +266,7 @@ with an argument will close all buffers but the supplied buffer name/number.
 
 **Customizations**:
 
-Binds `<leader>Bo` to `:BufOnly` (cap B so it doesn't slow down Buffergator)
+* Binds `<leader>Bo` to `:BufOnly` (cap B so it doesn't slow down Buffergator)
 
 ## [Tagbar](https://github.com/majutsushi/tagbar) ##
 
@@ -274,7 +274,7 @@ Tagbar is a vim plugin for browsing the tags of source code files.
 
 **Customizations**:
 
-Binds `<leader>rt` to toggle Tagbar
+* Binds `<leader>rt` to toggle Tagbar
 
 ## [Powerline](https://github.com/Lokaltog/vim-powerline) ##
 
@@ -283,6 +283,20 @@ functional vim statuslines.
 
 _(I have some customizations for this, but let them out of the repo, as they're
 fairly machine specific)_
+
+## [vimux](https://github.com/benmills/vimux) ##
+
+Easily interact with tmux from vim. This project is still in development, so
+some features are still missing.
+
+**Customizations**:
+
+* `<leader>rb` - Run the current file with rspec
+* `<leader>rp` - Prompt for a command to run
+* `<leader>rl` - Run last command executed by RunVimTmuxCommand
+* `<leader>ri` - Inspect runner pane
+* `<leader>rx` - Close all other tmux panes in current window
+* `<leader>rs` - Interrupt any command running in the runner pane
 
 ## [Abolish](https://github.com/tpope/vim-abolish) ##
 
