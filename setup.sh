@@ -7,11 +7,11 @@ ln -ivs $PWD/.vimrc ~/.vimrc
 ln -ivs $PWD/.gvimrc ~/.gvimrc
 
 if [ -d "$PWD/.vim/vundle.git" ]; then
-	cd $PWD/.vim/vundle.git
-	git pull origin master
-	cd $PWD
+  cd $PWD/.vim/vundle.git
+  git pull origin master
+  cd $PWD
+  vim +BundleInstall! +qa
 else
-	git clone http://github.com/gmarik/vundle.git $PWD/.vim/vundle.git
+  git clone http://github.com/gmarik/vundle.git $PWD/.vim/vundle.git
+  vim +BundleInstall +qa
 fi
-
-echo "\nIf this is your first installation, open vim and type ':BundleInstall' to install necessary plugins."

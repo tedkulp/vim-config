@@ -12,12 +12,12 @@ mklink "%HOME%\_gvimrc" "%HOME%\vim-config\.gvimrc"
 @if exist "%HOME%\.vim\vundle.git" goto vundleexists
 @goto vundlenotexists
 :vundleexists
-  cd "%HOME%\.vim\vundle.git"
-  git pull origin master
-  goto end
+cd "%HOME%\.vim\vundle.git"
+git pull origin master
+goto end
 :vundlenotexists
-	git clone "http://github.com/gmarik/vundle.git" "%HOME%\.vim\vundle.git"
-  goto end
+git clone "http://github.com/gmarik/vundle.git" "%HOME%\.vim\vundle.git"
+goto end
 :end
 
 @echo.

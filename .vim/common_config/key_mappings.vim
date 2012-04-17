@@ -34,3 +34,6 @@ nmap <Leader>Ba :bufdo bd<cr>
 
 " toggle background colour
 map <F9> :call ToggleBackgroundColour()<CR>
+
+" toggle paste mode
+set pastetoggle=<F8>
