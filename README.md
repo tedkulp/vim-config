@@ -13,8 +13,9 @@ Below is a list of plugin descriptions and keymap changes.
 1. `git clone git://github.com/tedkulp/vim-config.git`
 2. `cd vim-config`
 3. `sh setup.sh`
-4. `vim`
-5. `:BundleInstall`
+
+_Note_: You can rerun the script again and it will update all the plugins
+to their latest releases.
 
 ## Custom Shortcuts ##
 
@@ -33,6 +34,8 @@ Below is a list of plugin descriptions and keymap changes.
 * `<leader>-I` Reindent entire file
 * `<leader>-ss` Save all buffers/open files
 * `<leader>-Ba` Delete all buffers (cap B so it doesn't slow down Buffergator)
+* `F8` Toggle paste when in Insert mode
+* `F9` Toggle between light and dark background mode
 
 ## YankRing ##
 
