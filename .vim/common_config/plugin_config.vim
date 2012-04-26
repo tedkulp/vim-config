@@ -26,6 +26,7 @@ Bundle "Lokaltog/vim-powerline"
 Bundle "matschaffer/netrw-v142"
 Bundle "Align"
 Bundle 'altercation/vim-colors-solarized'
+Bundle "sjl/vitality.vim"
 Bundle 'benmills/vimux'
   " Run the current file with rspec
   map <Leader>rb :call RunVimTmuxCommand("clear; rspec " . bufname("%"))<CR>
