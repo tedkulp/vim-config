@@ -171,3 +171,9 @@ Bundle "tedkulp/jekyll.vim"
 " ZoomWin to fullscreen a particular buffer without losing others
 Bundle "vim-scripts/ZoomWin"
   map <Leader>z :ZoomWin<CR>
+
+" Snipmate and all of it's goodness
+Bundle "MarcWeber/vim-addon-mw-utils"
+Bundle "tomtom/tlib_vim"
+Bundle "snipmate-snippets"
+Bundle "garbas/vim-snipmate"
