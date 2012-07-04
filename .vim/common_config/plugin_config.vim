@@ -24,9 +24,12 @@ Bundle "nelstrom/vim-textobj-rubyblock"
 Bundle "Lokaltog/vim-easymotion"
 Bundle "Lokaltog/vim-powerline"
 Bundle "matschaffer/netrw-v142"
-Bundle "Align"
-Bundle 'altercation/vim-colors-solarized'
+Bundle "altercation/vim-colors-solarized"
+Bundle "godlygeek/tabular"
+
 Bundle "sjl/vitality.vim"
+  let g:vitality_fix_focus = 0
+
 Bundle 'benmills/vimux'
   " Run the current file with rspec
   map <Leader>rb :call RunVimTmuxCommand("clear; rspec " . bufname("%"))<CR>
