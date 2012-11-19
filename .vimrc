@@ -9,5 +9,9 @@ call vundle#rc()
 set background=dark
 colors solarized
 
+if !has('win32')
+  set shell=/bin/sh
+endif
+
 runtime! common_config/*.vim
 runtime! custom_config/*.vim

@@ -77,6 +77,9 @@ au BufRead,BufNewFile {Gemfile,Rakefile,Vagrantfile,Thorfile,config.ru,Guardfile
 " JSON is JS
 au BufNewFile,BufRead *.json set ai filetype=javascript
 
+"This is for setting Makefiles with tabs not spaces
+au FileType make setlocal tabstop=4 softtabstop=4 shiftwidth=4 noexpandtab
+
 " augment status line
 function! ETry(function, ...)
   if exists('*'.a:function)
