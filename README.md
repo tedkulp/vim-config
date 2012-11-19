@@ -157,6 +157,9 @@ Provides convenient ways to quickly reach the buffer or file you want.
 * `<leader>t` - fuzzy find files
 * `<C-s>` - open selected item in window in horizontal split
 * `<C-v>` - open selected item in vertical split
+* `<C-t>` - open selected item in a new tab
+* `<C-f>` / `<C-b>` - cycle between file, buffer and "both" modes
+* `<f5>` - purge the cache for the current directory
 
 ## [Fugitive](https://github.com/tpope/vim-fugitive) ##
 
