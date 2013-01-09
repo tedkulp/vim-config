@@ -75,7 +75,16 @@ au BufReadPost * if line("'\"") > 0 && line("'\"") <= line("$") | exe "normal g'
 au BufRead,BufNewFile {Gemfile,Rakefile,Vagrantfile,Thorfile,config.ru,Guardfile,Capfile} set ft=ruby
 
 " JSON is JS
-au BufNewFile,BufRead *.json set ai filetype=javascript
+augroup json_autocmd
+  autocmd!
+  autocmd FileType json set autoindent
+  autocmd FileType json set formatoptions=tcq2l
+  autocmd FileType json set textwidth=78 shiftwidth=2
+  autocmd FileType json set softtabstop=2 tabstop=8
+  autocmd FileType json set expandtab
+  autocmd FileType json set foldmethod=syntax
+augroup END
+au! BufRead,BufNewFile *.json set filetype=json
 
 "This is for setting Makefiles with tabs not spaces
 au FileType make setlocal tabstop=4 softtabstop=4 shiftwidth=4 noexpandtab
