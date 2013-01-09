@@ -26,6 +26,9 @@ Bundle "Lokaltog/vim-powerline"
 Bundle "matschaffer/netrw-v142"
 Bundle "altercation/vim-colors-solarized"
 Bundle "godlygeek/tabular"
+Bundle "jakar/vim-json"
+Bundle "nono/vim-handlebars"
+Bundle "bufexplorer.zip"
 
 Bundle "sjl/vitality.vim"
   let g:vitality_fix_focus = 0
@@ -48,14 +51,7 @@ Bundle "kchmck/vim-coffee-script"
   au BufNewFile,BufRead *.coffee set filetype=coffee
 
 Bundle "majutsushi/tagbar"
-  map <Leader>rt :TagbarToggle<cr>
-
-Bundle "jeetsukumaran/vim-buffergator"
-  " Remove the key binding and reset them by hand
-  " (it inteferes with CtrlP)
-  let g:buffergator_suppress_keymaps = 1
-  let g:buffergator_autoexpand_on_split = 0
-  map <Leader>b :BuffergatorToggle<cr>
+  map <Leader>t :TagbarToggle<cr>
 
 Bundle "BufOnly.vim"
   map <Leader>Bo  :BufOnly<CR>
@@ -153,7 +149,6 @@ Bundle "tpope/vim-fugitive"
   map <leader>gp :Git push<CR>
 
 Bundle "kien/ctrlp.vim"
-  map <Leader>t :CtrlP<cr>
   map <Leader>m :CtrlPMRU<cr>
 
 Bundle "mileszs/ack.vim"

@@ -27,13 +27,13 @@ to their latest releases.
 * `s-down` Resize buffer one line lower
 * `s-left` Resize buffer one column smaller
 * `s-right` Resize buffer one column bigger
-* `<leader>-w` Enable word wrapping
-* `<leader>-W` Disable word wrapping
-* `<leader>-c` Remove trailing whitespace on whole file
-* `<leader>-space` Remove search highlight
-* `<leader>-I` Reindent entire file
-* `<leader>-ss` Save all buffers/open files
-* `<leader>-Ba` Delete all buffers (cap B so it doesn't slow down Buffergator)
+* `<leader>w` Enable word wrapping
+* `<leader>W` Disable word wrapping
+* `<leader>c` Remove trailing whitespace on whole file
+* `<leader>space` Remove search highlight
+* `<leader>I` Reindent entire file
+* `<leader>ss` Save all buffers/open files
+* `<leader>Ba` Delete all buffers (cap B so it doesn't slow down Buffergator)
 * `F8` Toggle paste when in Insert mode
 * `F9` Toggle between light and dark background mode
 
@@ -154,11 +154,11 @@ There's a lot more; check it out at `:help surround`
 
 Provides convenient ways to quickly reach the buffer or file you want.
 
-* `<leader>t` - fuzzy find files
+* `<C-p>` - fuzzy find files
 * `<C-s>` - open selected item in window in horizontal split
 * `<C-v>` - open selected item in vertical split
 * `<C-t>` - open selected item in a new tab
-* `<C-f>` / `<C-b>` - cycle between file, buffer and "both" modes
+* `<C-f>` / `<C-b>` - cycle between file, buffer, MRU and "both" modes
 * `<f5>` - purge the cache for the current directory
 
 ## [Fugitive](https://github.com/tpope/vim-fugitive) ##
@@ -225,21 +225,22 @@ out again using `<C-W> o`
 
 * Binds `<leader>z` to `:ZoomWin`
 
-## [Buffergator](https://github.com/jeetsukumaran/vim-buffergator) ##
+## [Bufexplorer](http://www.vim.org/scripts/script.php?script_id=42) ##
 
-Buffergator is a plugin for listing, navigating between, and selecting buffers
-to edit. Upon invocation (using the command, :BuffergatorOpen or
-BuffergatorToggle, or the provided key mapping, <Leader>b), a catalog of listed
-buffers are displayed in a separate new window split (vertical or horizontal,
-based on user options; default = vertical). From this "buffer catalog", a
-buffer can be selected and opened in an existing window, a new window split
-(vertical or horizontal), or a new tab page.
+With bufexplorer, you can quickly and easily switch between buffers by using
+the one of the default public interfaces:
 
-Selected buffers can be "previewed", i.e. opened in a window or tab page, but
-with focus remaining in the buffer catalog. Even better, you can "walk" up and
-down the list of buffers shown in the catalog by using <C-N> (or <SPACE>) /
-<C-P> (or <C-SPACE>). These keys select the next/previous buffer in succession,
-respectively, opening it for preview without leaving the buffer catalog viewer.
+`<leader>be` (normal open)  or
+`<header>bs` (force horizontal split open)  or
+`<leader>bv` (force vertical split open)
+
+Once the bufexplorer window is open you can use the normal movement keys (hjkl)
+to move around and then use `<Enter>` or `<Left-Mouse-Click>` to select the
+buffer you would like to open. If you would like to have the selected buffer
+opened in a new tab, simply press either `<Shift-Enter>` or `t`. Please note
+that when opening a buffer in a tab, that if the buffer is already in another
+tab, bufexplorer can switch to that tab automatically for you if you would
+like.  More about that in the supplied VIM help.
 
 ## [EasyMotion](https://github.com/Lokaltog/vim-easymotion) ##
 
@@ -280,7 +281,7 @@ Tagbar is a vim plugin for browsing the tags of source code files.
 
 **Customizations**:
 
-* Binds `<leader>rt` to toggle Tagbar
+* Binds `<leader>t` to toggle Tagbar
 
 ## [Powerline](https://github.com/Lokaltog/vim-powerline) ##
 
