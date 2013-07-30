@@ -30,6 +30,7 @@ Bundle "jakar/vim-json"
 Bundle "nono/vim-handlebars"
 Bundle "bufexplorer.zip"
 Bundle "airblade/vim-gitgutter"
+Bundle "pangloss/vim-javascript"
 
 Bundle "sjl/vitality.vim"
   let g:vitality_fix_focus = 0
