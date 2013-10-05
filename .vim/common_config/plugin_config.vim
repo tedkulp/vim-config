@@ -27,13 +27,11 @@ Bundle "nelstrom/vim-textobj-rubyblock"
 Bundle "thinca/vim-textobj-function-javascript"
 Bundle "Lokaltog/vim-easymotion"
 Bundle "Lokaltog/vim-powerline"
-Bundle "matschaffer/netrw-v142"
 Bundle "altercation/vim-colors-solarized"
 Bundle "godlygeek/tabular"
 Bundle "jakar/vim-json"
 Bundle "nono/vim-handlebars"
 Bundle "bufexplorer.zip"
-Bundle "airblade/vim-gitgutter"
 Bundle "pangloss/vim-javascript"
 
 " Snippets
