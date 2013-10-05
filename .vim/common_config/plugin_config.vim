@@ -1,6 +1,8 @@
 " Plugins are managed by Vundle. Once VIM is open run :BundleInstall to
 " install plugins.
 
+filetype off
+
 " Plugins requiring no additional configuration or keymaps
 Bundle "YankRing.vim"
 Bundle "L9"
@@ -179,3 +181,5 @@ Bundle "MarcWeber/vim-addon-mw-utils"
 Bundle "tomtom/tlib_vim"
 Bundle "snipmate-snippets"
 Bundle "garbas/vim-snipmate"
+" perform autoindenting based on filetype plugin
+filetype plugin indent on
