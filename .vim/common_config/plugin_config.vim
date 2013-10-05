@@ -165,17 +165,6 @@ Bundle "mileszs/ack.vim"
   nmap g/ :Ack!<space>
   nmap g* :Ack! -w <C-R><C-W><space>
 
-Bundle "tedkulp/jekyll.vim"
-  let g:jekyll_path = "/Users/tedkulp/ruby/jekyll/_source"
-  let g:jekyll_posts_path = "/Users/tedkulp/Dropbox/tedkulp.com/_posts"
-  let g:jekyll_drafts_path = "/Users/tedkulp/Dropbox/tedkulp.com/_drafts"
-  let g:jekyll_prompt_tags = "true"
-  let g:jekyll_post_date = "true"
-
-  map <Leader>jn  :JekyllPost<CR>
-  map <Leader>jd  :JekyllDraft<CR>
-  map <Leader>jl  :JekyllList<CR>
-
 " ZoomWin to fullscreen a particular buffer without losing others
 Bundle "vim-scripts/ZoomWin"
   map <Leader>z :ZoomWin<CR>
