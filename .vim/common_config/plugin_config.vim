@@ -4,7 +4,6 @@
 filetype off
 
 " Plugins requiring no additional configuration or keymaps
-Bundle "YankRing.vim"
 Bundle "L9"
 Bundle "ddollar/nerdcommenter"
 Bundle "michaeljsmith/vim-indent-object"
