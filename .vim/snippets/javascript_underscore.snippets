@@ -1,0 +1,13 @@
+extends javascript
+
+snippet isun "_.isUndefined (js)" b
+_.isUndefined(${1:var})
+endsnippet
+
+snippet sc "shallow clone (js)" b
+_(${VISUAL}).clone()$0
+endsnippet
+
+snippet dc "deep clone (js)" b
+_.extend({}, ${VISUAL})$0
+endsnippet

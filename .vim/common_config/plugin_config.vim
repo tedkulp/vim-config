@@ -36,6 +36,10 @@ Bundle "bufexplorer.zip"
 Bundle "airblade/vim-gitgutter"
 Bundle "pangloss/vim-javascript"
 
+" Snippets
+Bundle "UltiSnips"
+  let g:UltiSnipsSnippetDirectories=["UltiSnips", "snippets"]
+
 Bundle "sjl/vitality.vim"
   let g:vitality_fix_focus = 0
 
@@ -176,10 +180,5 @@ Bundle "tedkulp/jekyll.vim"
 Bundle "vim-scripts/ZoomWin"
   map <Leader>z :ZoomWin<CR>
 
-" Snipmate and all of it's goodness
-Bundle "MarcWeber/vim-addon-mw-utils"
-Bundle "tomtom/tlib_vim"
-Bundle "snipmate-snippets"
-Bundle "garbas/vim-snipmate"
 " perform autoindenting based on filetype plugin
 filetype plugin indent on
