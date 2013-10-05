@@ -29,8 +29,6 @@ Bundle "Lokaltog/vim-powerline"
 Bundle "altercation/vim-colors-solarized"
 Bundle "godlygeek/tabular"
 Bundle "jakar/vim-json"
-Bundle "nono/vim-handlebars"
-Bundle "bufexplorer.zip"
 Bundle "pangloss/vim-javascript"
 
 " Snippets
