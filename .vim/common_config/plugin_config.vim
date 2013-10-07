@@ -163,6 +163,8 @@ NeoBundle 'Shougo/vimproc', {
       \ }
 
 NeoBundle "Shougo/unite.vim"
+  NeoBundle "Shougo/unite-outline"
+
   " Original config lifted from:
   " http://www.codeography.com/2013/06/17/replacing-all-the-things-with-unite-vim.html
   let g:unite_source_history_yank_enable = 1
@@ -183,6 +185,7 @@ NeoBundle "Shougo/unite.vim"
     imap <buffer> <C-j>   <Plug>(unite_select_next_line)
     imap <buffer> <C-k>   <Plug>(unite_select_previous_line)
   endfunction
+
 
 NeoBundle "mileszs/ack.vim"
   nmap g/ :Ack!<space>
