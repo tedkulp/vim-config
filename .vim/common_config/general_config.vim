@@ -1,6 +1,9 @@
 " Plugin stuff
 set nocompatible
 
+" Setup the path for neobundle
+set runtimepath+=~/.vim/bundle/neobundle.vim/
+
 " UTF-8 is the bestest
 set encoding=utf-8
 

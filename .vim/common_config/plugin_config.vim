@@ -1,44 +1,44 @@
-" Plugins are managed by Vundle. Once VIM is open run :BundleInstall to
+" Plugins are managed by Vundle. Once VIM is open run :NeoBundleInstall to
 " install plugins.
 
 filetype off
 
 " Plugins requiring no additional configuration or keymaps
-Bundle "L9"
-Bundle "ddollar/nerdcommenter"
-Bundle "michaeljsmith/vim-indent-object"
-Bundle "tpope/vim-abolish"
-Bundle "tpope/vim-bundler"
-Bundle "tpope/vim-cucumber"
-Bundle "tpope/vim-endwise"
-Bundle "tpope/vim-git"
-Bundle "tpope/vim-markdown"
-Bundle "tpope/vim-rails"
-Bundle "tpope/vim-rake"
-Bundle "tpope/vim-repeat"
-Bundle "tpope/vim-rvm"
-Bundle "tpope/vim-surround"
-Bundle "tpope/vim-unimpaired"
-Bundle "tsaleh/vim-matchit"
-Bundle "kana/vim-textobj-user"
-Bundle "kana/vim-textobj-function"
-Bundle "nelstrom/vim-textobj-rubyblock"
-Bundle "thinca/vim-textobj-function-javascript"
-Bundle "Lokaltog/vim-easymotion"
-Bundle "Lokaltog/vim-powerline"
-Bundle "altercation/vim-colors-solarized"
-Bundle "godlygeek/tabular"
-Bundle "jakar/vim-json"
-Bundle "pangloss/vim-javascript"
+NeoBundle "L9"
+NeoBundle "ddollar/nerdcommenter"
+NeoBundle "michaeljsmith/vim-indent-object"
+NeoBundle "tpope/vim-abolish"
+NeoBundle "tpope/vim-bundler"
+NeoBundle "tpope/vim-cucumber"
+NeoBundle "tpope/vim-endwise"
+NeoBundle "tpope/vim-git"
+NeoBundle "tpope/vim-markdown"
+NeoBundle "tpope/vim-rails"
+NeoBundle "tpope/vim-rake"
+NeoBundle "tpope/vim-repeat"
+NeoBundle "tpope/vim-rvm"
+NeoBundle "tpope/vim-surround"
+NeoBundle "tpope/vim-unimpaired"
+NeoBundle "tsaleh/vim-matchit"
+NeoBundle "kana/vim-textobj-user"
+NeoBundle "kana/vim-textobj-function"
+NeoBundle "nelstrom/vim-textobj-rubyblock"
+NeoBundle "thinca/vim-textobj-function-javascript"
+NeoBundle "Lokaltog/vim-easymotion"
+NeoBundle "Lokaltog/vim-powerline"
+NeoBundle "altercation/vim-colors-solarized"
+NeoBundle "godlygeek/tabular"
+NeoBundle "jakar/vim-json"
+NeoBundle "pangloss/vim-javascript"
 
 " Snippets
-Bundle "UltiSnips"
+NeoBundle "UltiSnips"
   let g:UltiSnipsSnippetDirectories=["UltiSnips", "snippets"]
 
-Bundle "sjl/vitality.vim"
+NeoBundle "sjl/vitality.vim"
   let g:vitality_fix_focus = 0
 
-Bundle 'benmills/vimux'
+NeoBundle 'benmills/vimux'
   " Run the current file with rspec
   map <Leader>rb :call RunVimTmuxCommand("clear; rspec " . bufname("%"))<CR>
   " Prompt for a command to run
@@ -52,29 +52,29 @@ Bundle 'benmills/vimux'
   " Interrupt any command running in the runner pane
   map <Leader>rs :InterruptVimTmuxRunner<CR>
 
-Bundle "kchmck/vim-coffee-script"
+NeoBundle "kchmck/vim-coffee-script"
   au BufNewFile,BufRead *.coffee set filetype=coffee
 
-Bundle "majutsushi/tagbar"
-  map <Leader>t :TagbarToggle<cr>
+NeoBundle "majutsushi/tagbar"
+  " map <Leader>t :TagbarToggle<cr>
 
-Bundle "BufOnly.vim"
+NeoBundle "BufOnly.vim"
   map <Leader>Bo  :BufOnly<CR>
 
-Bundle "ervandew/supertab"
-  if !exists("g:SuperTabMappingForward")
-    let g:SuperTabMappingForward = '<c-tab>'
-  endif
+" NeoBundle "ervandew/supertab"
+"   if !exists("g:SuperTabMappingForward")
+"     let g:SuperTabMappingForward = '<c-space>'
+"   endif
 
-  if !exists("g:SuperTabMappingBackward")
-    let g:SuperTabMappingBackward = '<s-tab>'
-  endif
+"   if !exists("g:SuperTabMappingBackward")
+"     let g:SuperTabMappingBackward = '<s-space>'
+"   endif
 
-  if !exists("g:SuperTabMappingTabLiteral")
-    let g:SuperTabMappingTabLiteral = '<tab>'
-  endif
+  " if !exists("g:SuperTabMappingTabLiteral")
+  "   let g:SuperTabMappingTabLiteral = '<tab>'
+  " endif
 
-Bundle "scrooloose/nerdtree"
+NeoBundle "scrooloose/nerdtree"
   " let NERDTreeHijackNetrw = 0
   let NERDTreeShowHidden=1
   nmap gt :NERDTreeToggle<CR>
@@ -145,7 +145,7 @@ Bundle "scrooloose/nerdtree"
     endif
   endfunction
 
-Bundle "tpope/vim-fugitive"
+NeoBundle "tpope/vim-fugitive"
   map <leader>gb :Gblame<CR>
   map <leader>gs :Gstatus<CR>
   map <leader>gd :Gdiff<CR>
@@ -153,15 +153,43 @@ Bundle "tpope/vim-fugitive"
   map <leader>gc :Gcommit<CR>
   map <leader>gp :Git push<CR>
 
-Bundle "kien/ctrlp.vim"
-  map <Leader>m :CtrlPMRU<cr>
+NeoBundle 'Shougo/vimproc', {
+      \ 'build' : {
+      \     'windows' : 'make -f make_mingw32.mak',
+      \     'cygwin' : 'make -f make_cygwin.mak',
+      \     'mac' : 'make -f make_mac.mak',
+      \     'unix' : 'make -f make_unix.mak',
+      \    },
+      \ }
 
-Bundle "mileszs/ack.vim"
+NeoBundle "Shougo/unite.vim"
+  " Original config lifted from:
+  " http://www.codeography.com/2013/06/17/replacing-all-the-things-with-unite-vim.html
+  let g:unite_source_history_yank_enable = 1
+  call unite#filters#matcher_default#use(['matcher_fuzzy'])
+  nnoremap <leader>t  :<C-u>Unite -no-split -buffer-name=files   -start-insert file_rec/async:!<cr>
+  nnoremap <leader>f  :<C-u>Unite -no-split -buffer-name=files   -start-insert file<cr>
+  nnoremap <leader>r  :<C-u>Unite -no-split -buffer-name=mru     -start-insert file_mru<cr>
+  nnoremap <leader>o  :<C-u>Unite -no-split -buffer-name=outline -start-insert outline<cr>
+  nnoremap <leader>y  :<C-u>Unite -no-split -buffer-name=yank    history/yank<cr>
+  nnoremap <leader>be :<C-u>Unite -no-split -buffer-name=buffer  buffer<cr>
+
+  " Custom mappings for the unite buffer
+  autocmd FileType unite call s:unite_settings()
+  function! s:unite_settings()
+    " Play nice with supertab
+    " let b:SuperTabDisabled=1
+    " Enable navigation with control-j and control-k in insert mode
+    imap <buffer> <C-j>   <Plug>(unite_select_next_line)
+    imap <buffer> <C-k>   <Plug>(unite_select_previous_line)
+  endfunction
+
+NeoBundle "mileszs/ack.vim"
   nmap g/ :Ack!<space>
   nmap g* :Ack! -w <C-R><C-W><space>
 
 " ZoomWin to fullscreen a particular buffer without losing others
-Bundle "vim-scripts/ZoomWin"
+NeoBundle "vim-scripts/ZoomWin"
   map <Leader>z :ZoomWin<CR>
 
 " perform autoindenting based on filetype plugin
