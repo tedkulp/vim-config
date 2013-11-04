@@ -31,10 +31,6 @@ NeoBundle "godlygeek/tabular"
 NeoBundle "jakar/vim-json"
 NeoBundle "pangloss/vim-javascript"
 
-" Snippets
-NeoBundle "UltiSnips"
-  let g:UltiSnipsSnippetDirectories=["UltiSnips", "snippets"]
-
 NeoBundle "sjl/vitality.vim"
   let g:vitality_fix_focus = 0
 
@@ -61,18 +57,23 @@ NeoBundle "majutsushi/tagbar"
 NeoBundle "BufOnly.vim"
   map <Leader>Bo  :BufOnly<CR>
 
-" NeoBundle "ervandew/supertab"
-"   if !exists("g:SuperTabMappingForward")
-"     let g:SuperTabMappingForward = '<c-space>'
-"   endif
+" Supertab completion
+NeoBundle "ervandew/supertab"
+  if !exists("g:SuperTabMappingForward")
+    let g:SuperTabMappingForward = '<c-space>'
+  endif
 
-"   if !exists("g:SuperTabMappingBackward")
-"     let g:SuperTabMappingBackward = '<s-space>'
-"   endif
+  if !exists("g:SuperTabMappingBackward")
+    let g:SuperTabMappingBackward = '<s-space>'
+  endif
 
-  " if !exists("g:SuperTabMappingTabLiteral")
-  "   let g:SuperTabMappingTabLiteral = '<tab>'
-  " endif
+  if !exists("g:SuperTabMappingTabLiteral")
+    let g:SuperTabMappingTabLiteral = '<tab>'
+  endif
+
+" Snippets
+NeoBundle "UltiSnips"
+  let g:UltiSnipsSnippetDirectories=["UltiSnips", "snippets"]
 
 NeoBundle "scrooloose/nerdtree"
   " let NERDTreeHijackNetrw = 0
