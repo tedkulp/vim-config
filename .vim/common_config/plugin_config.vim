@@ -25,11 +25,25 @@ NeoBundle "kana/vim-textobj-function"
 NeoBundle "nelstrom/vim-textobj-rubyblock"
 NeoBundle "thinca/vim-textobj-function-javascript"
 NeoBundle "Lokaltog/vim-easymotion"
-NeoBundle "Lokaltog/vim-powerline"
 NeoBundle "altercation/vim-colors-solarized"
 NeoBundle "godlygeek/tabular"
 NeoBundle "jakar/vim-json"
 NeoBundle "pangloss/vim-javascript"
+
+NeoBundle "bling/vim-airline"
+  let g:airline_powerline_fonts = 1
+
+  if !exists('g:airline_symbols')
+    let g:airline_symbols = {}
+  endif
+
+  let g:airline_left_sep = '⮀'
+  let g:airline_left_alt_sep = '⮁'
+  let g:airline_right_sep = '⮂'
+  let g:airline_right_alt_sep = '⮃'
+  let g:airline_symbols.branch = '⭠'
+  let g:airline_symbols.readonly = '⭤'
+  let g:airline_symbols.linenr = '⭡'
 
 NeoBundle "sjl/vitality.vim"
   let g:vitality_fix_focus = 0
