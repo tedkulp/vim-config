@@ -15,8 +15,8 @@ if [ -d "$PWD/.vim/bundle/neobundle.vim" ]; then
   cd $PWD/.vim/bundle/neobundle.vim
   git pull origin master
   cd $PWD
-  vim -c NeoBundleInstall! -c qall > /dev/null 2>&1
+  vim +NeoBundleInstall! +qall
 else
   git clone https://github.com/Shougo/neobundle.vim.git $PWD/.vim/bundle/neobundle.vim
-  vim -c NeoBundleInstall -c qall > /dev/null 2>&1
+  vim +NeoBundleInstall! +qall
 fi
