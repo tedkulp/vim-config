@@ -29,6 +29,7 @@ NeoBundle "altercation/vim-colors-solarized"
 NeoBundle "godlygeek/tabular"
 NeoBundle "jakar/vim-json"
 NeoBundle "pangloss/vim-javascript"
+NeoBundle "elixir-lang/vim-elixir"
 
 NeoBundle "bling/vim-airline"
   let g:airline_powerline_fonts = 1
