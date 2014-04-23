@@ -30,6 +30,7 @@ NeoBundle "godlygeek/tabular"
 NeoBundle "jakar/vim-json"
 NeoBundle "pangloss/vim-javascript"
 NeoBundle "elixir-lang/vim-elixir"
+NeoBundle "jnwhiteh/vim-golang"
 
 NeoBundle "bling/vim-airline"
   let g:airline_powerline_fonts = 1
