@@ -89,7 +89,7 @@ NeoBundle "ervandew/supertab"
 
 " Snippets
 NeoBundle "UltiSnips"
-  let g:UltiSnipsSnippetDirectories=["UltiSnips", "snippets"]
+  let g:UltiSnipsSnippetDirectories=["UltiSnips", "custom_snippets"]
 
 NeoBundle "scrooloose/nerdtree"
   " let NERDTreeHijackNetrw = 0
