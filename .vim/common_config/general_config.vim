@@ -74,6 +74,9 @@ au BufReadPost * if line("'\"") > 0 && line("'\"") <= line("$") | exe "normal g'
 " Ruby are ALL THE THINGS, sort of
 au BufRead,BufNewFile {Gemfile,Rakefile,Vagrantfile,Thorfile,config.ru,Guardfile,Capfile} set ft=ruby
 
+" Ruby are ALL THE THINGS, sort of
+au BufRead,BufNewFile {Gruntfile} set ft=javascript
+
 " JSON is JS
 augroup json_autocmd
   autocmd!
@@ -88,6 +91,8 @@ au! BufRead,BufNewFile *.json set filetype=json
 
 "This is for setting Makefiles with tabs not spaces
 au FileType make setlocal tabstop=4 softtabstop=4 shiftwidth=4 noexpandtab
+
+au FileType javascript setlocal tabstop=4 softtabstop=4 shiftwidth=4 expandtab
 
 " augment status line
 function! ETry(function, ...)
