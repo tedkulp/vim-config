@@ -32,6 +32,7 @@ NeoBundle "pangloss/vim-javascript"
 NeoBundle "elixir-lang/vim-elixir"
 NeoBundle "jnwhiteh/vim-golang"
 NeoBundle "derekwyatt/vim-scala"
+NeoBundle "wookiehangover/jshint.vim"
 
 NeoBundle "bling/vim-airline"
   let g:airline_powerline_fonts = 1
