@@ -207,10 +207,22 @@ NeoBundle "Shougo/unite.vim"
     imap <buffer> <C-k>   <Plug>(unite_select_previous_line)
   endfunction
 
+  " Use ag for search
+  if executable('ag')
+    let g:unite_source_grep_command = 'ag'
+    let g:unite_source_grep_default_opts = '--nogroup --nocolor --column'
+    let g:unite_source_grep_recursive_opt = ''
+    let g:unite_source_rec_async_command= 'ag --nocolor --nogroup --hidden -g "" --ignore-dir ".git"'
+  endif
 
 NeoBundle "mileszs/ack.vim"
   nmap g/ :Ack!<space>
   nmap g* :Ack! -w <C-R><C-W><space>
+
+NeoBundle "rking/ag.vim"
+  if executable('ag')
+    nmap g/ :Ag!<space>
+  endif
 
 " ZoomWin to fullscreen a particular buffer without losing others
 NeoBundle "vim-scripts/ZoomWin"
