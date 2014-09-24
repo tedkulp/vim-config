@@ -93,6 +93,7 @@ au! BufRead,BufNewFile *.json set filetype=json
 au FileType make setlocal tabstop=4 softtabstop=4 shiftwidth=4 noexpandtab
 
 au FileType javascript setlocal tabstop=4 softtabstop=4 shiftwidth=4 expandtab
+au FileType go,*.go    setlocal tabstop=2 softtabstop=2 shiftwidth=2 expandtab
 
 " augment status line
 function! ETry(function, ...)
