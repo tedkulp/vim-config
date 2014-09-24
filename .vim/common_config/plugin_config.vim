@@ -30,7 +30,6 @@ NeoBundle "godlygeek/tabular"
 NeoBundle "jakar/vim-json"
 NeoBundle "pangloss/vim-javascript"
 NeoBundle "elixir-lang/vim-elixir"
-NeoBundle "jnwhiteh/vim-golang"
 NeoBundle "derekwyatt/vim-scala"
 NeoBundle "fatih/vim-go"
   let g:go_fmt_autosave = 0
