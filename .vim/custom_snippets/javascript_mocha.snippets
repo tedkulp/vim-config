@@ -5,3 +5,16 @@ it('${1:desc}', function() {
 	$0
 });
 endsnippet
+
+snippet itd "it(...) (js)" b
+it('${1:desc}', function(done) {
+	$0
+	done();
+});
+endsnippet
+
+snippet desc "desc(...) (js)" b
+describe('${1:desc}', function() {
+	$0
+});
+endsnippet
